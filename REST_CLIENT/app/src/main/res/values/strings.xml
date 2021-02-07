@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">TaskManager</string>
+
+    <!--dialog-->
+    <string name="dialog_button_ok">OK</string>
+    <string name="dialog_button_yes">Yes</string>
+    <string name="dialog_button_no">No</string>
+
+    <!--progress dialog-->
+    <string name="please_wait">Please Wait</string>
+
+
+    <!--Error-->
+    <string name="error_dialog_title">Error</string>
+    <string name="error_feature_not_implemented">Feature not implemented yet.</string>
+    <string name="error_login">Failed to Login.</string>ring>
+    <!--success-->
+    <string name="success_dialog_title">Success</string>
+    <!--progress-->
+    <string name="in_progress">In Progress</string>
+
+
+    <!--login-->
+    <string name="login_user_name_hint">Username</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_user_password_hint">Password</string>
+    <string name="forgot_password_underlined"><u>Forgot Password</u></string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="welcome_text">Welcome Back</string>
+    <string name="sign_in_instruction">Sign in to continue</string>
+    <string name="log_in">Log In</string>
+    <string name="log_out">Log Out</string>
+    <string name="sign_up_prompt">Don\'t have aKing account?</string>
+    <string name="sign_up_underlined"><u> Sign up</u></string>
+    <string name="sign_up">Sign up</string>
+    <string name="login_error_email_invalid">Email is invalid</string>
+    <string name="login_error_password_empty">Password is empty</string>
+    <string name="username_empty">Username is empty</string>
+    <string name="validating">Validating Credentials…</string>
+    <string name="registering">Registration In Progress…</string>
+
+    <!--forgot password-->
+    <string name="forgot_password_instruction">Please enter your email address below to receive your
+        password reset instructions</string>
+    <string name="send_forgot_password_request">Send Request</string>
+
+    <!--reset password-->
+    <string name="reset_password_text">Reset Password</string>
+    <string name="reset_password_instruction">Reset code was sent to your email. Please enter the code
+    and create new password.</string>
+    <string name="new_password">New password</string>
+    <string name="reset_code">Reset code</string>
+    <string name="confirm_new_passwrd">Confirm password</string>
+    <string name="change_password">Change Password</string>
+    <string name="reset_code_empty">Code is empty</string>
+    <string name="password_does_not_match">Password does not match</string>
+    <string name="change_password_successful">You have successfully change password. Please use your
+        new passwords when logging in.</string>
+
+    <!--sign up-->
+    <string name="sign_up_instruction">Please provide username, email and password to sign up. </string>
+
+    <!--splash screen-->
+    <string name="tasks_assign">Tasks and assign</string>
+    <string name="tasks_assign_instruction">Tasks and assign them to colleagues</string>
+
+
+    <!--exit-->
+    <string name="please_press_again_to_exit">Please BACK again to exit</string>
+
+    <!--main activity-->
+    <string name="hi">Hey %1$s!</string>
+
+
+
+
+
+</resources>

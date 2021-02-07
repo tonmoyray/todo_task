@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textSize="@dimen/font_size_super_largest"
+            app:layout_constraintTop_toBottomOf="@+id/top_guide"
+            app:layout_constraintStart_toEndOf="@+id/start_guide"
+            app:layout_constraintEnd_toStartOf="@+id/end_guide" />
+
+        <TextView
+            android:id="@+id/instruction_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_instruction"
+            android:textSize="@dimen/font_size_large"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_text"
+            app:layout_constraintStart_toEndOf="@+id/start_guide"
+            app:layout_constraintEnd_toStartOf="@+id/end_guide" />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_name_text_input_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_content_user_name_margin_top"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/login_user_name_hint"
+            app:errorTextColor="@color/red"
+            app:layout_constraintStart_toStartOf="@+id/start_guide"
+            app:layout_constraintEnd_toStartOf="@+id/end_guide"
+            app:layout_constraintTop_toBottomOf="@+id/instruction_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_input_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/login_email_hint"
+            app:errorTextColor="@color/red"
+            app:layout_constraintStart_toStartOf="@+id/start_guide"
+            app:layout_constraintEnd_toStartOf="@+id/end_guide"
+            app:layout_constraintTop_toBottomOf="@+id/user_name_text_input_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_text_input_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/new_password"
+            app:passwordToggleEnabled="true"
+            app:errorTextColor="@color/red"
+            app:layout_constraintStart_toStartOf="@+id/start_guide"
+            app:layout_constraintEnd_toStartOf="@+id/end_guide"
+            app:layout_constraintTop_toBottomOf="@+id/email_input_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirm_password_text_input_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/confirm_new_passwrd"
+            app:passwordToggleEnabled="true"
+            app:errorTextColor="@color/red"
+            app:layout_constraintStart_toStartOf="@+id/start_guide"
+            app:layout_constraintEnd_toStartOf="@+id/end_guide"
+            app:layout_constraintTop_toBottomOf="@+id/password_text_input_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sign_up"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/login_button_height"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/login_button_margin_top"
+            app:layout_constraintStart_toStartOf="@+id/start_guide"
+            app:layout_constraintEnd_toStartOf="@+id/end_guide"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_password_text_input_layout" />
+
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/top_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".15"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/end_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".95"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/start_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".05"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</layout>

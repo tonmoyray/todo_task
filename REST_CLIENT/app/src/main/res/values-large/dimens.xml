@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--default font size-->
+    <dimen name="font_size_smallest_smallest">12sp</dimen>
+    <dimen name="font_size_smallest">14sp</dimen>
+    <dimen name="font_size_smaller">15sp</dimen>
+    <dimen name="font_size_small">16sp</dimen>
+    <dimen name="font_size_semi_medium">18sp</dimen>
+    <dimen name="font_size_medium">20sp</dimen>
+    <dimen name="font_size_medium_v2">35sp</dimen>
+    <dimen name="font_size_semi_large">24sp</dimen>
+    <dimen name="font_size_large">26sp</dimen>
+    <dimen name="font_size_larger">28sp</dimen>
+    <dimen name="font_size_largest">32sp</dimen>
+    <dimen name="font_size_super_large">34sp</dimen>
+    <dimen name="font_size_super_larger">38sp</dimen>
+    <dimen name="font_size_super_largest">44sp</dimen>
+
+
+    <!--login-->
+    <dimen name="login_button_height">80dp</dimen>
+    <dimen name="login_button_margin_top">120dp</dimen>
+    <dimen name="registration_instruction_margin_top">120dp</dimen>
+    <dimen name="login_content_user_name_margin_top">120dp</dimen>
+    <dimen name="forgot_password_margin_top">20dp</dimen>
+
+
+</resources>
